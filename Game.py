@@ -7,4 +7,4 @@ total = sum(power)
 
 armorused = min(armor,max(power))
 
-minHealth = total- armorused +1
+print( total- armorused +1)
