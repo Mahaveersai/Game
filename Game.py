@@ -4,14 +4,7 @@
 power = [1,2,3,6]
 armor = 7 
 total = sum(power)
-armourUsed = 0
 
-for i in power:
-  if armor <= i:
-    armourUsed = armor
-    break
-  elif armourUsed < i:
-    armourUsed = i
-    
-print(total - armourUsed + 1)
-  
+armorused = min(armor,max(power))
+
+minHealth = total- armorused +1
